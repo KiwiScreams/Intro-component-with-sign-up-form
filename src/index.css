@@ -12,4 +12,32 @@
   --green-clr: #38CC8B;
   --purple-clr: #5E54A4;
   --dark-clr: #3D3B48;
+  --white-clr: #fff;
+  --black-clr: #000;
+}
+body
+{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: var(--pink-clr);
+}
+.text-block-section
+{
+  width: 50%;
+}
+.text-block-section h1
+{
+  color: var(--white-clr);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 12px;
+}
+.text-block-section p
+{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white-clr);
 }
