@@ -1,0 +1,15 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root
+{
+  --pink-clr: #FF7979;
+  --green-clr: #38CC8B;
+  --purple-clr: #5E54A4;
+  --dark-clr: #3D3B48;
+}
