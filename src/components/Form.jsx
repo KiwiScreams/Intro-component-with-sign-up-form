@@ -31,7 +31,7 @@ const Form = () => {
             <input type="password" name="password" id="password" placeholder="password"/>
           </div>
           <button>CLAIM YOUR FREE TRIAL</button>
-          <p>
+          <p className="terms">
             <span>By clicking the button, you are agreeing to our</span>{" "}
             <span>Terms and Services</span>
           </p>

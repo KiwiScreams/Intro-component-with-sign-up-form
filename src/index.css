@@ -22,16 +22,22 @@ body
 {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   background-image: url(../images/bg-intro-desktop.png);
   background-color: var(--pink-clr);
 }
 main
 {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 45px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .text-block-section
 {
@@ -55,7 +61,6 @@ main
 .form-section
 {
   width: 50%;
-  background-color: red;
 }
 .form-section form
 {
@@ -104,4 +109,19 @@ main
 .form-section form .input-box input:focus
 {
   border: 1px solid var(--purple-clr);
+}
+.form-section .terms
+{
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 80px;
+}
+.form-section p span:nth-child(1)
+{
+  color: #BAB7D4;
+}
+.form-section p span:nth-child(2)
+{
+  color: var(--pink-clr);
 }
