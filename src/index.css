@@ -22,6 +22,10 @@ body
   background-image: url(../images/bg-intro-desktop.png);
   background-color: var(--pink-clr);
 }
+main
+{
+  width: 50%;
+}
 .text-block-section
 {
   width: 50%;
