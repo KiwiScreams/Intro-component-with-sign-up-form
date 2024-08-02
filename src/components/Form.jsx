@@ -88,7 +88,7 @@ const Form = () => {
             />
             {errors.firstname && (
               <div className="error">
-                {errors.firstname.icon} {errors.firstname.message}
+                {errors.firstname.icon} <p className="error-message">{errors.firstname.message}</p>
               </div>
             )}
           </div>
@@ -110,7 +110,7 @@ const Form = () => {
             />
             {errors.lastname && (
               <div className="error">
-                {errors.lastname.icon} {errors.lastname.message}
+                {errors.lastname.icon} <p className="error-message">{errors.lastname.message}</p>
               </div>
             )}
           </div>
@@ -132,7 +132,7 @@ const Form = () => {
             />
             {errors.email && (
               <div className="error">
-                {errors.email.icon} {errors.email.message}
+                {errors.email.icon} <p className="error-message">{errors.email.message}</p>
               </div>
             )}
           </div>
@@ -153,7 +153,7 @@ const Form = () => {
             />
             {errors.password && (
               <div className="error">
-                {errors.password.icon} {errors.password.message}
+                {errors.password.icon} <p className="error-message">{errors.password.message}</p>
               </div>
             )}
           </div>
