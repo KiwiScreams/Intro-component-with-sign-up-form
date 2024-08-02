@@ -9,6 +9,7 @@ const Form = () => {
   const [successpassword, setSuccesspassword] = useState("");
   const name_regex = /^[a-zA-Z][a-zA-Z0-_]{3,23}$/;
   const email_regex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+  const password_regex = /^(?=.*[a-zA-Z]).{8,32}$/;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,17 +47,17 @@ const Form = () => {
         message: "",
       };
     }
-    if (password.trim() === "") {
-      errors.password = {
-        icon: <i className="fa-solid fa-circle-exclamation"></i>,
-        message: "Password is required",
-      };
-    } else {
-      errors.password = {
-        icon: <i className=""></i>,
-        message: "",
-      };
-    }
+    if (!password_regex.test(password)) {
+        errors.password = {
+          icon: <i className="fa-solid fa-circle-exclamation"></i>,
+          message: "Password must be between 8 and 32 characters",
+        };
+      } else {
+        errors.password = {
+          icon: <i className=""></i>,
+          message: "",
+        };
+      }
     setErrors(errors);
     if (Object.keys(errors).length === 0) {
       setIsSubmitted(true);
