@@ -70,6 +70,9 @@ const Form = () => {
   return (
     <>
       <div className="form-section">
+        <div className="try-free">
+            <p><strong>Try it free 7</strong> days then $20/mo. thereafter</p>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
             <input
