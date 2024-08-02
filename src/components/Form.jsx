@@ -17,7 +17,7 @@ const Form = () => {
     if (!name_regex.test(firstname)) {
       errors.firstname = {
         icon: <i className="fa-solid fa-circle-exclamation"></i>,
-        message: "Invalid first name",
+        message: "First Name cannot be empty",
       };
     } else {
       errors.firstname = {
@@ -28,7 +28,7 @@ const Form = () => {
     if (!name_regex.test(lastname)) {
       errors.lastname = {
         icon: <i className="fa-solid fa-circle-exclamation"></i>,
-        message: "Invalid last name",
+        message: "Last Name cannot be empty",
       };
     } else {
       errors.lastname = {
@@ -39,7 +39,7 @@ const Form = () => {
     if (!email_regex.test(email)) {
       errors.email = {
         icon: <i className="fa-solid fa-circle-exclamation"></i>,
-        message: "Invalid email address",
+        message: "Looks like this is not an email",
       };
     } else {
       errors.email = {
@@ -50,7 +50,7 @@ const Form = () => {
     if (!password_regex.test(password)) {
         errors.password = {
           icon: <i className="fa-solid fa-circle-exclamation"></i>,
-          message: "Password must be between 8 and 32 characters",
+          message: "Password cannot be empty",
         };
       } else {
         errors.password = {
